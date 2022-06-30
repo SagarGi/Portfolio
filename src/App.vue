@@ -1,28 +1,55 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <div class="toogle-button">
+      <ThemeToogle />
+    </div>
+    <div class="info-section">
+      <InfoSection />
+    </div>
+    <div class="reachout-section">
+      <ReachOut />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ThemeToogle from "./components/ThemeToogle.vue";
+import InfoSection from "./components/InfoSection.vue";
+import ReachOut from "./components/ReachOut.vue";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    ThemeToogle,
+    InfoSection,
+    ReachOut,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0px;
+}
+.toogle-button {
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 10vh;
+  padding-right: 150px;
+}
+
+.info-section {
+  background: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+.reachout-section {
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
 }
 </style>
