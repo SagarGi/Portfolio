@@ -39,7 +39,7 @@ body {
 }
 
 .info-section {
-  background: rgb(238, 238, 238);
+  /*background: rgb(33, 11, 11);*/
   display: flex;
   align-items: center;
   justify-content: center;
